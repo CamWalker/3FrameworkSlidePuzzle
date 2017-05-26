@@ -1,0 +1,7 @@
+.tile {
+  height: 98px;
+  width: 98px;
+  background-color: #abfd21;
+  border: 1px solid black;
+  z-index: 2;
+}
