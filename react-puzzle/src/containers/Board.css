@@ -1,6 +1,38 @@
+.board-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+.board-winner {
+  height: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.board-moves {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.board-button {
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: #00D8FF;
+  border: none;
+}
 .board-edge {
   display: flex;
   flex-direction: column;
+  margin: auto;
+}
+.corner,.horiz-edge,.vert-edge {
+  background-color: #6b98bf;
+background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
 }
 .corner {
   height: 40px;

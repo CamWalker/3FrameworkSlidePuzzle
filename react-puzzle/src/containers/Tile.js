@@ -2,14 +2,24 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { moveTile } from '../actions/boardActions'
 import './Tile.css';
-
+// import reactLogo from '../react.png';
 
 class Tile extends Component {
+  tileAction = () => {
+    if(!this.props.game.won) {
+      this.props.moveTile(this.props.x, this.props.y, this.props.game, this.props.id);
+    }
+  }
 
   render() {
+    const id = `n${this.props.id}`
     return (
-      <div className="tile" onClick={() => this.props.moveTile(this.props.x, this.props.y, this.props.game)}>
-        {this.props.value}
+      <div
+        id={id}
+        className="tile"
+        onClick={() => this.tileAction()}
+      >
+        
       </div>
     )
   }
